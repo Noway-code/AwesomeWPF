@@ -1,4 +1,4 @@
-﻿using System.Text;
+﻿using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -19,18 +19,10 @@ namespace AwesomeWPF
         public MainWindow()
         {
             InitializeComponent();
+
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            if (HelloButton.IsChecked == true)
-            {
-                MessageBox.Show("Hello World!");
-            }
-            else
-            {
-                MessageBox.Show("Goodbye World!");
-            }   
-        }
     }
+
+
 }
